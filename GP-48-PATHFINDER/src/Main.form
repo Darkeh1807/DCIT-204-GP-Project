@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Main">
+  <grid id="27dc6" binding="rootPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <preferredSize width="450" height="400"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="5b13e" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="89d04" binding="headPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="First"/>
+            <properties>
+              <background color="-2238463"/>
+              <minimumSize width="436" height="65"/>
+              <preferredSize width="436" height="65"/>
+            </properties>
+            <border type="none" title-justification="2" title-position="4"/>
+            <children>
+              <component id="1d7e0" class="javax.swing.JLabel" binding="heading">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-2238463"/>
+                  <enabled value="true"/>
+                  <font name="Tahoma" size="18" style="1"/>
+                  <foreground color="-13877680"/>
+                  <text value="GP-48 PATH FINDER"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="a341a" binding="bodyPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <background color="-13877680"/>
+              <minimumSize width="436" height="260"/>
+              <preferredSize width="436" height="260"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="7fd11" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="9" left="10" bottom="6" right="10"/>
+                <constraints border-constraint="South"/>
+                <properties>
+                  <background color="-13877680"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="ed2ee" class="javax.swing.JButton" binding="button">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-14775357"/>
+                      <font name="Tahoma" size="16" style="1"/>
+                      <foreground color="-1"/>
+                      <text value="Start"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="3ed9e" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="20" bottom="0" right="0"/>
+                <constraints border-constraint="West"/>
+                <properties>
+                  <background color="-13877680"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="a03b1" class="javax.swing.JLabel" binding="locationLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="16" style="1"/>
+                      <foreground color="-1249039"/>
+                      <text value="Location"/>
+                    </properties>
+                  </component>
+                  <component id="64b00" class="javax.swing.JLabel" binding="destinationLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="Tahoma" size="16" style="1"/>
+                      <foreground color="-1249039"/>
+                      <text value="Destination"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="128f" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="10"/>
+                <constraints border-constraint="East"/>
+                <properties>
+                  <background color="-13877680"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="efd37" class="javax.swing.JComboBox" binding="LocationSelector">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="250" height="10"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Computer Dept"/>
+                        <item value="Engineering Dept"/>
+                        <item value="Law Faculty"/>
+                        <item value="JQB"/>
+                        <item value="Main Gate"/>
+                        <item value="Performing Arts"/>
+                        <item value="Maths and Stats"/>
+                        <item value="Balme"/>
+                        <item value="UGCS"/>
+                        <item value="Business School"/>
+                        <item value="Volta Hall"/>
+                        <item value="Commonwealth"/>
+                        <item value="Great Hall"/>
+                        <item value="Akuafo Hall"/>
+                        <item value="Legon Hall"/>
+                        <item value="Bush Canteen"/>
+                        <item value="Sarbah Park"/>
+                        <item value="Fire Station"/>
+                        <item value="Banking Square"/>
+                        <item value="Night Market"/>
+                        <item value="Basic School"/>
+                        <item value="Diaspora"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="5f378" class="javax.swing.JComboBox" binding="DestinationSelector">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="250" height="10"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Computer Dept"/>
+                        <item value="Engineering Dept"/>
+                        <item value="Law Faculty"/>
+                        <item value="JQB"/>
+                        <item value="Main Gate"/>
+                        <item value="Performing Arts"/>
+                        <item value="Maths and Stats"/>
+                        <item value="Balme"/>
+                        <item value="UGCS"/>
+                        <item value="Business School"/>
+                        <item value="Volta Hall"/>
+                        <item value="Commonwealth"/>
+                        <item value="Great Hall"/>
+                        <item value="Akuafo Hall"/>
+                        <item value="Legon Hall"/>
+                        <item value="Bush Canteen"/>
+                        <item value="Sarbah Park"/>
+                        <item value="Fire Station"/>
+                        <item value="Banking Square"/>
+                        <item value="Night Market"/>
+                        <item value="Basic School"/>
+                        <item value="Diaspora"/>
+                      </model>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="251b2" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="0" bottom="10" right="0"/>
+            <constraints border-constraint="South"/>
+            <properties>
+              <background color="-13877680"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="60d12" class="javax.swing.JLabel" binding="outputBox1">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <foreground color="-1"/>
+                  <text value="Welcome To GP-48 Path Finder"/>
+                </properties>
+                <clientProperties>
+                  <html.disable class="java.lang.Boolean" value="false"/>
+                </clientProperties>
+              </component>
+              <component id="b260f" class="javax.swing.JLabel" binding="outputBox2">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <foreground color="-1"/>
+                  <text value="Genuis!"/>
+                </properties>
+                <clientProperties>
+                  <html.disable class="java.lang.Boolean" value="false"/>
+                </clientProperties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
